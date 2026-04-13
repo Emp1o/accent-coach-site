@@ -1,14 +1,5 @@
-/*
-1. Создай счётчик в Яндекс Метрике.
-2. Вставь код счётчика в index.html перед подключением этого файла.
-3. Замени METRICA_COUNTER_ID на свой реальный ID.
-4. Создай в Метрике цели:
-   - click_install
-   - click_install_bottom
-   - click_github
-*/
 (function () {
-  var counterId = 'METRICA_COUNTER_ID';
+  var counterId = '108492491';
 
   function sendGoal(name) {
     if (window.ym) ym(counterId, 'reachGoal', name);
