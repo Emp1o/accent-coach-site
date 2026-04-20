@@ -1,198 +1,157 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Accent Coach — ударения, запятые и ЕГЭ-тренажёр</title>
-  <meta name="description" content="Расширение для ударений, запятых, карточек и режима ЕГЭ. Подходит для школы, подготовки к экзаменам и ежедневной практики." />
-  <meta name="robots" content="index,follow" />
-  <link rel="canonical" href="https://emp1o.github.io/accent-coach-site/" />
-  <meta property="og:title" content="Accent Coach — ударения, запятые и ЕГЭ-тренажёр" />
-  <meta property="og:description" content="Проверяй ударения, тренируй пунктуацию, повторяй карточки и готовься к ЕГЭ в одном расширении." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ОрфоДракон — ударения, запятые и ЕГЭ-тренажёр</title>
+  <meta name="description" content="ОрфоДракон помогает проверять ударения, тренировать пунктуацию, повторять сложные случаи в карточках и проходить тесты в режиме ЕГЭ." />
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:site_name" content="ОрфоДракон" />
+  <meta property="og:title" content="ОрфоДракон — ударения, запятые и ЕГЭ-тренажёр" />
+  <meta property="og:description" content="Расширение для Chrome и Yandex Browser: тренируй ударения, пунктуацию, карточки и ЕГЭ-режим с маскотом-драконом." />
   <meta property="og:url" content="https://emp1o.github.io/accent-coach-site/" />
-  <meta property="og:image" content="https://emp1o.github.io/accent-coach-site/og-image.svg" />
+  <meta property="og:image" content="https://emp1o.github.io/accent-coach-site/assets/og-image.png" />
+  <meta property="og:image:secure_url" content="https://emp1o.github.io/accent-coach-site/assets/og-image.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="ОрфоДракон — расширение для подготовки к ЕГЭ по русскому языку" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Accent Coach — ударения, запятые и ЕГЭ-тренажёр" />
-  <meta name="twitter:description" content="Проверяй ударения, тренируй пунктуацию и повторяй карточки." />
-  <meta name="twitter:image" content="https://emp1o.github.io/accent-coach-site/og-image.svg" />
-  <link rel="icon" href="favicon.svg" />
+  <meta name="twitter:title" content="ОрфоДракон — ударения, запятые и ЕГЭ-тренажёр" />
+  <meta name="twitter:description" content="Расширение для Chrome и Yandex Browser: тренируй ударения, пунктуацию, карточки и ЕГЭ-режим с маскотом-драконом." />
+  <meta name="twitter:image" content="https://emp1o.github.io/accent-coach-site/assets/og-image.png" />
+  <meta name="twitter:image:alt" content="ОрфоДракон — расширение для подготовки к ЕГЭ по русскому языку" />
+  <link rel="image_src" href="https://emp1o.github.io/accent-coach-site/assets/og-image.png" />
+  <meta name="theme-color" content="#172554" />
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/icon16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/icon32.png" />
+  <link rel="apple-touch-icon" href="icons/icon128.png" />
+  <link rel="icon" type="image/png" sizes="128x128" href="icons/icon128.png" />
   <link rel="stylesheet" href="styles.css" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Accent Coach",
-    "applicationCategory": "EducationalApplication",
-    "operatingSystem": "Chrome",
-    "url": "https://emp1o.github.io/accent-coach-site/",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "RUB"
-    },
-    "description": "Расширение для ударений, запятых, карточек и режима ЕГЭ."
-  }
-  </script>
 </head>
 <body>
-  <div class="bg-glow bg-glow-1"></div>
-  <div class="bg-glow bg-glow-2"></div>
+  <div class="site-glow site-glow--gold" aria-hidden="true"></div>
+  <div class="site-glow site-glow--blue" aria-hidden="true"></div>
 
-  <header class="hero">
-    <nav class="nav container">
-      <a class="brand" href="#">
-        <span class="brand-logo">A</span>
-        <span class="brand-text">Accent Coach</span>
-      </a>
-      <div class="nav-actions">
-        <a href="#features" class="nav-link">Возможности</a>
-        <a href="#install" class="nav-link">Установка</a>
-        <a href="#faq" class="nav-link">FAQ</a>
-      </div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="ОрфоДракон">
+      <img src="icons/icon48.png" alt="" />
+      <span>ОрфоДракон</span>
+    </a>
+    <nav class="nav" aria-label="Главное меню">
+      <a href="#features">Возможности</a>
+      <a href="#install">Установка</a>
+      <a href="#faq">FAQ</a>
     </nav>
-
-    <section class="container hero-grid">
-      <div class="hero-copy">
-        <div class="pill">Расширение для Chrome • ЕГЭ • Карточки</div>
-        <h1>Учи ударения и запятые так, чтобы это реально запоминалось</h1>
-        <p class="lead">
-          Accent Coach помогает проверять ударения, тренировать пунктуацию, повторять сложные случаи в карточках и проходить тесты в режиме ЕГЭ.
-        </p>
-        <div class="hero-buttons">
-          <a id="install-btn" class="btn btn-primary" href="https://github.com/Emp1o/accent-coach-extension/releases/download/v3.0/accent-coach-extension-master.zip" target="_blank" rel="noopener">Скачать расширение</a>
-          <a class="btn btn-secondary" href="#install">Инструкция по установке</a>
-          <a id="github-btn" class="btn btn-secondary" href="https://github.com/Emp1o/accent-coach-extension" target="_blank" rel="noopener">Код на GitHub</a>
-        </div>
-        <div class="hero-meta">
-          <div class="meta-item"><strong>Подходит для:</strong> школьников, преподавателей и всех, кто хочет писать грамотнее.</div>
-          <div class="meta-item"><strong>Режимы:</strong> ударения, запятые, карточки, тренировка, ЕГЭ.</div>
-        </div>
-      </div>
-
-      <div class="hero-preview">
-        <div class="mockup-card">
-          <div class="mockup-header">
-            <span></span><span></span><span></span>
-          </div>
-          <div class="mockup-body">
-            <div class="mockup-badge">Карточка</div>
-            <div class="mockup-question">Поставь ударение:</div>
-            <div class="mockup-word">договор</div>
-            <div class="mockup-answer">догово́р</div>
-            <div class="mockup-actions">
-              <button class="mock-btn mock-btn-danger" type="button">Не помню</button>
-              <button class="mock-btn mock-btn-success" type="button">Помню</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </header>
 
-  <main class="container">
-    <section class="stats">
-      <div class="stat-card">
-        <div class="stat-value">4</div>
-        <div class="stat-label">ключевых режима в одном расширении</div>
+  <main id="top">
+    <section class="hero section-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Расширение для Chrome • ЕГЭ • Карточки</p>
+        <h1>Учи ударения и запятые так, чтобы это реально запоминалось</h1>
+        <p class="lead">ОрфоДракон помогает проверять ударения, тренировать пунктуацию, повторять сложные случаи в карточках и проходить тесты в режиме ЕГЭ.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-download-highlight" href="https://github.com/Emp1o/accent-coach-extension/releases/download/v3.0/accent-coach-extension-master.zip">Скачать расширение</a>
+          <a class="btn btn-ghost" href="#install">Инструкция по установке</a>
+          <a class="btn btn-ghost" href="https://github.com/Emp1o/accent-coach-extension">Код на GitHub</a>
+        </div>
+        <div class="hero-pills" aria-label="Кратко о расширении">
+          <span>Подходит для: школьников, преподавателей и всех, кто хочет писать грамотнее.</span>
+          <span>Режимы: ударения, запятые, карточки, тренировка, ЕГЭ.</span>
+        </div>
       </div>
-      <div class="stat-card">
-        <div class="stat-value">0 ₽</div>
-        <div class="stat-label">за базовую локальную версию</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-value">1</div>
-        <div class="stat-label">место для ударений, запятых, карточек и ЕГЭ</div>
+
+      <div class="hero-stage" aria-label="Пример карточки тренировки">
+        <div class="mascot-orbit" aria-hidden="true">
+          <img class="mascot mascot-main" src="assets/dragon-king.svg" alt="" />
+          <img class="mascot mascot-small mascot-small--one" src="assets/dragon-gold.svg" alt="" />
+          <img class="mascot mascot-small mascot-small--two" src="assets/dragon-ege.svg" alt="" />
+        </div>
+        <article class="demo-card">
+          <div class="demo-card__top">
+            <span>Карточка</span>
+            <span class="badge">ЕГЭ</span>
+          </div>
+          <p>Поставь ударение:</p>
+          <strong>договор</strong>
+          <div class="answer">догово́р</div>
+          <div class="demo-actions">
+            <button type="button">Не помню</button>
+            <button type="button">Помню</button>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="section">
-      <div class="content-card">
-        <div class="pill dark">Пилот в школе</div>
+    <section class="stats" aria-label="Факты о расширении">
+      <article>
+        <strong>4</strong>
+        <span>ключевых режима в одном расширении</span>
+      </article>
+      <article>
+        <strong>0 ₽</strong>
+        <span>за базовую локальную версию</span>
+      </article>
+      <article>
+        <strong>1</strong>
+        <span>место для ударений, запятых, карточек и ЕГЭ</span>
+      </article>
+    </section>
+
+    <section class="section split pilot-section">
+      <div class="panel panel-dark">
+        <p class="eyebrow">Пилот в школе</p>
         <h2>Сейчас идёт тестирование расширения на учениках и учителях</h2>
-        <p>
-          Мы проверяем, насколько удобно пользоваться расширением в реальных школьных условиях:
-          на уроках, при подготовке к ЕГЭ и в самостоятельной подготовке дома.
-        </p>
-        <p>
-          Цель пилота — понять, помогает ли расширение быстрее разбирать ударения, запятые
-          и закреплять сложные случаи через карточки и тренировку.
-        </p>
-        <div class="hero-buttons" style="margin-top:16px;">
-          <a
-            id="feedback-btn-top"
-            class="btn btn-primary"
-            href="https://forms.gle/rbCUKHwBAbGJnM8K7"
-            target="_blank"
-            rel="noopener"
-          >
-            Оставить отзыв
-          </a>
-        </div>
-        
-        <div
-          style="
-            margin-top:12px;
-            padding:12px 14px;
-            border-radius:14px;
-            background:#f3f1ff;
-            border:1px solid rgba(108,99,255,.18);
-            color:#4b4f8f;
-            font-style: italic;
-            font-weight: 600;
-            line-height:1.45;
-          "
-        >
-          После тестирования обязательно оставьте короткий отзыв: это поможет понять,
-          насколько удобно пользоваться расширением, какие функции полезнее всего
-          и что стоит улучшить в первую очередь.
+        <p>Мы проверяем, насколько удобно пользоваться расширением в реальных школьных условиях: на уроках, при подготовке к ЕГЭ и в самостоятельной подготовке дома.</p>
+        <p>Цель пилота — понять, помогает ли расширение быстрее разбирать ударения, запятые и закреплять сложные случаи через карточки и тренировку.</p>
+        <a class="btn btn-primary btn-feedback-highlight" href="https://forms.gle/rbCUKHwBAbGJnM8K7">Оставить отзыв</a>
+      </div>
+      <div class="panel panel-light mascot-panel">
+        <img src="assets/dragon-academy.svg" alt="Маскот ОрфоДракона" />
+        <div>
+          <p class="eyebrow">Обратная связь</p>
+          <h2>Помоги дракону стать полезнее</h2>
+          <p>После тестирования обязательно оставьте короткий отзыв: это поможет понять, насколько удобно пользоваться расширением, какие функции полезнее всего и что стоит улучшить в первую очередь.</p>
         </div>
       </div>
     </section>
-  
-    <section class="section">
-      <div class="section-head">
-        <div class="pill dark">KPI пилота</div>
+
+    <section class="section kpi-section">
+      <div class="section-heading">
+        <p class="eyebrow">KPI пилота</p>
         <h2>Каких результатов мы хотим достичь</h2>
-        <p>
-          Для школьного тестирования мы ставим реалистичные цели, чтобы оценить интерес к продукту,
-          удобство установки и полезность основных функций.
-        </p>
+        <p>Для школьного тестирования мы ставим реалистичные цели, чтобы оценить интерес к продукту, удобство установки и полезность основных функций.</p>
       </div>
-    
-      <div class="feature-grid">
+      <div class="feature-grid kpi-grid">
         <article class="feature-card">
-          <div class="feature-icon">👀</div>
+          <span class="feature-icon">30+</span>
           <h3>30+ посещений</h3>
           <p>Планируем получить не меньше 30 переходов на лендинг во время школьного пилота.</p>
         </article>
-    
         <article class="feature-card">
-          <div class="feature-icon">⬇️</div>
+          <span class="feature-icon">⬇️</span>
           <h3>10+ кликов по установке</h3>
           <p>Проверим, насколько людям интересен продукт и готовы ли они попробовать расширение.</p>
         </article>
-    
         <article class="feature-card">
-          <div class="feature-icon">🧪</div>
+          <span class="feature-icon">5+</span>
           <h3>5+ реальных тестов</h3>
           <p>Нужно, чтобы хотя бы 5 пользователей не просто открыли сайт, а реально протестировали расширение.</p>
         </article>
-    
         <article class="feature-card">
-          <div class="feature-icon">📝</div>
+          <span class="feature-icon">8+</span>
           <h3>8+ отзывов</h3>
           <p>Хотим собрать качественную обратную связь от учеников и учителей после тестирования.</p>
         </article>
-    
         <article class="feature-card">
-          <div class="feature-icon">⭐</div>
+          <span class="feature-icon">⭐</span>
           <h3>Средняя оценка 4.0/5+</h3>
           <p>Цель — получить среднюю оценку полезности расширения не ниже 4 из 5.</p>
         </article>
-    
         <article class="feature-card">
-          <div class="feature-icon">🎯</div>
+          <span class="feature-icon">🐉</span>
           <h3>Проверить ценность функций</h3>
           <p>Хотим понять, какие функции важнее всего: ударения, запятые, карточки или ЕГЭ-режим.</p>
         </article>
@@ -200,67 +159,79 @@
     </section>
 
     <section id="features" class="section">
-      <div class="section-head">
-        <div class="pill dark">Возможности</div>
-        <h2>Что умеет Accent Coach</h2>
+      <div class="section-heading">
+        <p class="eyebrow">Возможности</p>
+        <h2>Что умеет ОрфоДракон</h2>
         <p>Не просто показывает ответ, а помогает закрепить правило через карточки, тренировки и повторение.</p>
       </div>
       <div class="feature-grid">
-        <article class="feature-card"><div class="feature-icon">🔤</div><h3>Ударения</h3><p>Проверяй ударение в одном слове или сразу во всём тексте.</p></article>
-        <article class="feature-card"><div class="feature-icon">✍️</div><h3>Запятые</h3><p>Тренируй пунктуацию по правилам и смотри краткое объяснение.</p></article>
-        <article class="feature-card"><div class="feature-icon">🃏</div><h3>Карточки</h3><p>Сохраняй сложные случаи и возвращайся к ним позже.</p></article>
-        <article class="feature-card"><div class="feature-icon">🚀</div><h3>Тренировка</h3><p>Повторяй карточки в формате коротких учебных сессий.</p></article>
-        <article class="feature-card"><div class="feature-icon">📝</div><h3>ЕГЭ-режим</h3><p>Решай тестовые задания в формате экзаменационного тренажёра.</p></article>
-        <article class="feature-card"><div class="feature-icon">🔔</div><h3>Напоминания</h3><p>Умные уведомления приоритизируют сложные слова и предложения.</p></article>
+        <article class="feature-card">
+          <span class="feature-icon">́</span>
+          <h3>Ударения</h3>
+          <p>Проверяй ударение в одном слове или сразу во всём тексте.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">✍️</span>
+          <h3>Запятые</h3>
+          <p>Тренируй пунктуацию по правилам и смотри краткое объяснение.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">📚</span>
+          <h3>Карточки</h3>
+          <p>Сохраняй сложные случаи и возвращайся к ним позже.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">⚔️</span>
+          <h3>Тренировка</h3>
+          <p>Повторяй карточки в формате коротких учебных сессий.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">📝</span>
+          <h3>ЕГЭ-режим</h3>
+          <p>Решай тестовые задания в формате экзаменационного тренажёра.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">🔔</span>
+          <h3>Напоминания</h3>
+          <p>Умные уведомления приоритизируют сложные слова и предложения.</p>
+        </article>
       </div>
     </section>
 
-    <section class="section">
-      <div class="section-head">
-        <div class="pill dark">Интерфейс</div>
+    <section class="section interface-section">
+      <div class="section-heading">
+        <p class="eyebrow">Интерфейс</p>
         <h2>Как выглядит расширение</h2>
-        <p>
-          Ниже можно показать реальные экраны расширения, чтобы пользователи сразу понимали,
-          как оно выглядит и как им пользоваться.
-        </p>
+        <p>Ниже — реальные экраны расширения: popup, библиотека карточек и ЕГЭ-режим.</p>
       </div>
-    
-      <div class="feature-grid">
-        <article class="feature-card">
-          <img
-            src="images/popup.png"
-            alt="Popup расширения Accent Coach"
-            style="width:100%; border-radius:14px; margin-bottom:12px;"
-          />
+      <div class="interface-grid">
+        <article class="screen-card">
+          <div class="screen-preview screen-preview--popup screen-preview--realshot">
+            <img src="assets/screenshots/popup.png" alt="Popup расширения ОрфоДракон" />
+          </div>
           <h3>Popup</h3>
           <p>Быстрая проверка ударений, запятых и доступ к карточкам.</p>
         </article>
-    
-        <article class="feature-card">
-          <img
-            src="images/cards.png"
-            alt="Карточки Accent Coach"
-            style="width:100%; border-radius:14px; margin-bottom:12px;"
-          />
+        <article class="screen-card">
+          <div class="screen-preview screen-preview--cards screen-preview--realshot">
+            <img src="assets/screenshots/cards.png" alt="Библиотека карточек ОрфоДракон" />
+          </div>
           <h3>Карточки</h3>
           <p>Сохраняй сложные случаи и повторяй их позже в удобном формате.</p>
         </article>
-    
-        <article class="feature-card">
-          <img
-            src="images/ege.png"
-            alt="ЕГЭ режим Accent Coach"
-            style="width:100%; border-radius:14px; margin-bottom:12px;"
-          />
+        <article class="screen-card">
+          <div class="screen-preview screen-preview--ege screen-preview--realshot">
+            <img src="assets/screenshots/ege.png" alt="ЕГЭ-режим ОрфоДракон" />
+          </div>
           <h3>ЕГЭ-режим</h3>
           <p>Тестовый режим для подготовки к экзамену в формате задания.</p>
         </article>
       </div>
     </section>
 
-    <section class="section two-col">
-      <div class="content-card">
-        <div class="pill dark">Как это работает</div>
+    <section class="section split">
+      <div class="panel panel-dark">
+        <p class="eyebrow">Как это работает</p>
         <h2>Один инструмент вместо набора разрозненных сайтов</h2>
         <ol class="steps">
           <li>Проверяешь слово или предложение.</li>
@@ -269,10 +240,10 @@
           <li>Перед экзаменом запускаешь ЕГЭ-режим.</li>
         </ol>
       </div>
-      <div class="content-card">
-        <div class="pill dark">Кому подойдёт</div>
+      <div class="panel panel-light">
+        <p class="eyebrow">Кому подойдёт</p>
         <h2>Для школы, экзаменов и ежедневной практики</h2>
-        <ul class="benefits">
+        <ul class="check-list">
           <li>Школьникам — для подготовки к ЕГЭ и контрольным.</li>
           <li>Тем, кто хочет писать грамотнее без постоянного поиска по словарям.</li>
           <li>Тем, кому важно не только узнать ответ, но и запомнить его.</li>
@@ -281,129 +252,137 @@
     </section>
 
     <section id="install" class="section install-section">
-      <div class="section-head">
-        <div class="pill dark">Установка</div>
+      <div class="section-heading">
+        <p class="eyebrow">Установка</p>
         <h2>Как установить расширение</h2>
         <p>Сейчас основной путь — через GitHub Release. Позже можно добавить публикацию в Chrome Web Store.</p>
       </div>
       <div class="install-grid">
-        <article class="install-card accent">
+        <article class="install-card">
+          <span class="install-number">1</span>
           <h3>Основной способ — через GitHub</h3>
           <ol>
-            <li>Нажми <strong>Скачать расширение</strong>.</li>
+            <li>Нажми Скачать расширение.</li>
             <li>Распакуй архив на компьютер.</li>
-            <li>Зайди в более подходящий браузер (Google или Yandex), в адресной (верхней) строке в Google набери <code>chrome://extensions</code>, в Yandex - <code>browser://extensions</code>.</li>
-            <li>Включи <strong>Режим разработчика (Developer mode)</strong>.</li>
-            <li>Нажми <strong>Загрузить распакованное расширение (Load unpacked)</strong>.</li>
+            <li>Зайди в Google или Yandex, в адресной (верхней) строке набери для
+              <br>Google: <code>chrome://extensions</code>
+              <br>Yandex: <code>browser://extensions</code></li>
+            <li>Включи Режим разработчика (Developer mode).</li>
+            <li>Нажми Загрузить распакованное расширение (Load unpacked).</li>
             <li>Выбери папку <code>extension</code> в распакованном архиве.</li>
           </ol>
         </article>
         <article class="install-card">
+          <span class="install-number">2</span>
           <h3>Когда появится версия в магазине</h3>
           <p>После публикации в Chrome Web Store установка станет проще: достаточно будет нажать одну кнопку в магазине и добавить расширение в браузер.</p>
         </article>
       </div>
+      <div class="install-manual-cta">
+        <a class="btn btn-primary btn-manual-highlight" href="OrfoDrakon_full_user_manual.pdf" target="_blank" rel="noopener">Открыть полную PDF-инструкцию</a>
+        <p class="install-manual-note">Здесь подробнее описаны способ установки и принцип пользования расширением.</p>
+      </div>
     </section>
 
-    <section class="section">
-      <div class="section-head">
-        <div class="pill dark">Что внутри</div>
+    <section class="section scenarios-section">
+      <div class="section-heading">
+        <p class="eyebrow">Что внутри</p>
         <h2>Какие сценарии закрывает расширение</h2>
       </div>
       <div class="feature-grid">
-        <article class="feature-card"><h3>Быстрая проверка</h3><p>Открыл popup — получил ответ за пару секунд.</p></article>
-        <article class="feature-card"><h3>Большой текст</h3><p>Можно работать не только с отдельным словом, но и с фрагментом текста.</p></article>
-        <article class="feature-card"><h3>Подготовка к экзамену</h3><p>Повторение и ЕГЭ-режим помогают закреплять сложные случаи системно.</p></article>
+        <article class="feature-card">
+          <span class="feature-icon">⚡</span>
+          <h3>Быстрая проверка</h3>
+          <p>Открыл popup — получил ответ за пару секунд.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">🎓</span>
+          <h3>Подготовка к экзамену</h3>
+          <p>Повторение и ЕГЭ-режим помогают закреплять сложные случаи системно.</p>
+        </article>
       </div>
     </section>
 
-    <section class="section cta-section">
-      <div class="cta-card">
-        <div>
-          <div class="pill dark">Попробовать</div>
-          <h2>Начни собирать свои сложные слова уже сегодня</h2>
-          <p>Скачай расширение, загрузи его в браузер и преврати типичные ошибки в карточки для повторения.</p>
-        </div>
-        <div class="hero-buttons">
-          <a id="install-btn-bottom" class="btn btn-primary" href="https://github.com/Emp1o/accent-coach-extension/releases/download/v3.0/accent-coach-extension-master.zip" target="_blank" rel="noopener">Скачать расширение</a>
-          <a href="#install" class="btn btn-secondary">Посмотреть установку</a>
-        </div>
+    <section class="cta section">
+      <div>
+        <p class="eyebrow">Попробовать</p>
+        <h2>Начни собирать свои сложные слова уже сегодня</h2>
+        <p>Скачай расширение, загрузи его в браузер и преврати типичные ошибки в карточки для повторения.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn btn-primary btn-download-highlight" href="https://github.com/Emp1o/accent-coach-extension/releases/download/v3.0/accent-coach-extension-master.zip">Скачать расширение</a>
+        <a class="btn btn-ghost" href="#install">Посмотреть установку</a>
       </div>
     </section>
 
-    <section class="section">
-      <div class="cta-card">
+    <section class="section feedback-section">
+      <div class="panel feedback-panel">
         <div>
-          <div class="pill dark">Обратная связь</div>
+          <p class="eyebrow">Обратная связь</p>
           <h2>Протестировал расширение? Оставь короткий отзыв</h2>
-          <p>
-            Нам важно понять, насколько удобно пользоваться расширением,
-            какие функции полезнее всего и что стоит улучшить.
-          </p>
+          <p>Нам важно понять, насколько удобно пользоваться расширением, какие функции полезнее всего и что стоит улучшить.</p>
         </div>
-        <div class="hero-buttons">
-          <a
-            id="feedback-btn"
-            class="btn btn-primary"
-            href="https://forms.gle/rbCUKHwBAbGJnM8K7"
-            target="_blank"
-            rel="noopener"
-          >
-            Оставить отзыв
-          </a>
-        </div>
+        <a class="btn btn-primary btn-feedback-highlight" href="https://forms.gle/rbCUKHwBAbGJnM8K7">Оставить отзыв</a>
       </div>
     </section>
-    
-    <section id="faq" class="section">
-      <div class="section-head">
-        <div class="pill dark">FAQ</div>
+
+    <section id="faq" class="section faq">
+      <div class="section-heading">
+        <p class="eyebrow">FAQ</p>
         <h2>Частые вопросы</h2>
       </div>
-      <div class="faq-list">
-        <details class="faq-item"><summary>Расширение бесплатное?</summary><p>Да, базовая локальная версия может работать без внешнего API.</p></details>
-        <details class="faq-item"><summary>Это безопасно?</summary><p>Да. Код проекта открыт на GitHub, а карточки и настройки в локальной версии хранятся в браузере пользователя.</p></details>
-        <details class="faq-item"><summary>Почему установка идёт через Developer mode?</summary><p>Потому что текущая публичная версия распространяется через GitHub Release. После публикации в Chrome Web Store путь установки станет проще.</p></details>
-        <details class="faq-item"><summary>Подходит для подготовки к ЕГЭ?</summary><p>Да. Особенно полезны карточки, тренировки, уведомления и отдельный ЕГЭ-режим.</p></details>
-        <details class="faq-item"><summary>Можно ли посмотреть исходный код?</summary><p>Да, для этого на сайте есть отдельная кнопка GitHub.</p></details>
-        <details class="faq-item"><summary>Зачем сейчас проводится тестирование в школе?</summary><p>Мы хотим проверить, насколько удобно расширение для учеников и учителей и какие функции наиболее полезны в реальной практике.</p></details>
-        <details class="faq-item"><summary>Какие данные собираются во время теста?</summary><p>На лендинге собирается только обезличенная статистика посещений и кликов по кнопкам через Яндекс Метрику.</p></details>
-        <details class="faq-item"><summary>Можно ли использовать расширение для подготовки к ЕГЭ?</summary><p>Да. В расширении есть карточки, режим тренировки и отдельный ЕГЭ-режим в формате теста.</p></details>
-      </div>
+      <details open>
+        <summary>Расширение бесплатное?</summary>
+        <p>Да, базовая локальная версия может работать без внешнего API.</p>
+      </details>
+      <details>
+        <summary>Это безопасно?</summary>
+        <p>Да. Код проекта открыт на GitHub, а карточки и настройки в локальной версии хранятся в браузере пользователя.</p>
+      </details>
+      <details>
+        <summary>Почему установка идёт через Developer mode?</summary>
+        <p>Потому что текущая публичная версия распространяется через GitHub Release. После публикации в Chrome Web Store путь установки станет проще.</p>
+      </details>
+      <details>
+        <summary>Подходит для подготовки к ЕГЭ?</summary>
+        <p>Да. Особенно полезны карточки, тренировки, уведомления и отдельный ЕГЭ-режим.</p>
+      </details>
+      <details>
+        <summary>Можно ли посмотреть исходный код?</summary>
+        <p>Да, для этого на сайте есть отдельная кнопка GitHub.</p>
+      </details>
+      <details>
+        <summary>Зачем сейчас проводится тестирование в школе?</summary>
+        <p>Мы хотим проверить, насколько удобно расширение для учеников и учителей и какие функции наиболее полезны в реальной практике.</p>
+      </details>
+      <details>
+        <summary>Какие данные собираются во время теста?</summary>
+        <p>На лендинге собирается только обезличенная статистика посещений и кликов по кнопкам через Яндекс Метрику.</p>
+      </details>
+      <details>
+        <summary>Можно ли использовать расширение для подготовки к ЕГЭ?</summary>
+        <p>Да. В расширении есть карточки, режим тренировки и отдельный ЕГЭ-режим в формате теста.</p>
+      </details>
     </section>
   </main>
 
-  <footer class="footer container">
-    <div class="footer-top">
-      <div>
-        <strong>Accent Coach</strong>
-        <p>Тренажёр ударений, запятых, карточек и ЕГЭ.</p>
-      </div>
-      <div class="footer-links">
-        <a href="#features">Возможности</a>
-        <a href="#install">Установка</a>
-        <a href="#faq">FAQ</a>
-        <a href="https://github.com/Emp1o/accent-coach-extension" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://github.com/Emp1o/accent-coach-extension/releases/latest" target="_blank" rel="noopener">Release</a>
-        <a href="privacy.html">Privacy Policy</a>
-      </div>
+  <footer class="footer">
+    <div>
+      <a class="brand" href="#top">
+        <img src="icons/icon48.png" alt="" />
+        <span>ОрфоДракон</span>
+      </a>
+      <p>Тренажёр ударений, запятых, карточек и ЕГЭ.</p>
     </div>
+    <nav class="footer-links" aria-label="Нижнее меню">
+      <a href="#features">Возможности</a>
+      <a href="#install">Установка</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://github.com/Emp1o/accent-coach-extension">GitHub</a>
+      <a href="https://github.com/Emp1o/accent-coach-extension/releases/latest">Release</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
   </footer>
-
-  <script src="metrica.js"></script>
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-        (function(m,e,t,r,i,k,a){
-            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-            m[i].l=1*new Date();
-            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=108492491', 'ym');
-
-        ym(108492491, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/108492491" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-  <script src="metrica.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
